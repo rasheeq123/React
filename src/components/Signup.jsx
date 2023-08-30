@@ -3,7 +3,8 @@ import React from 'react'
 const Signup = () => {
   return (
 
-      <div className="main">
+      <div className="signup-main">
+        <div>
         
         <h2><b><center/>SIGN UP </b> </h2>
         <br/>
@@ -22,7 +23,7 @@ const Signup = () => {
         <input className="myinput" type="date"/>
        
         
-        <label for="password" style={{fontFamily:'serif'  , fontSsize: '1.1em'}}>Password<label>
+        <label for="password" style={{fontFamily:'serif'  , fontSsize: '1.1em'}}>Password</label>
         <input className="myinput" type="password"/>
 
         <label for="password" style={{fontFamily:'serif'  , fontSsize: '1.1em'}}> Confirm Password</label>
@@ -38,8 +39,10 @@ const Signup = () => {
        
         
     </form>
+    </div>
 
 </div>
   )
 }
 
+export default Signup;
