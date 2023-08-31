@@ -33,19 +33,19 @@ const Contact_form = () => {
     </div>
     
     <form>
-        <label for="name" style=" color:rgb(162, 143, 30); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Full Name</label>
-        <input className="form-control form-control-lg my-input myinput-card" type="name">
+        <label for="name" style={{color:'rgb(162, 143, 30)', fontFamily: "Gill Sans, GillSans MT, Calibri, Trebuchet MS, sansSserif",  fontSsize: '1.1em'}}>Full Name</label>
+        <input className="form-control form-control-lg my-input myinput-card" type="name"/>
 
-    <label for="mail" style=" color:rgb(179, 157, 32); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Email</label>
+    <label for="mail" style={{ color:'rgb(179, 157, 32)', fontFamily: "GillSans, Gill Sans MT, Calibri, Trebuchet MS, sansSerif", fontSsize: '1.1em'}}>Email</label>
     <input className="form-control form-control-lg my-input myinput-card" type="email"/>
 
-    <label for="phone" style=" color:rgb(179, 157, 32); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  font-size: 1.1em";>Phone Number</label>
+    <label for="phone" style={{color:'rgb(179, 157, 32)', fontFfamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sansSserif",  fontSsize: '1.1em'}}>Phone Number</label>
     <input className="form-control form-control-lg my-input myinput-card" type="tel"/>
 
-    <label for="message" style="color:rgb(179, 157, 32)";> Message</label>
+    <label for="message" style={{color:'rgb(179, 157, 32)'}}> Message</label>
         <textarea className="form-control form-control-lg my-input myinput-card" rows = "3" cols = "23" name = "description"  >
           </textarea>
-          <br><br>
+          <br/><br/>
          <button className="raise button-card">Submit</button>
     </form>
       </div>
@@ -54,5 +54,30 @@ const Contact_form = () => {
 
   )
 }
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.site-title',{
+         delay:200, 
+        origin: 'top',
+        distance: '100px'   ,
+        duration: 500 ,
+        scale:1.5, 
+        
+      });
+    </script>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init( document.querySelectorAll ('.card'),{
+        max:3, //animation ke lie time ki kitti time limit tk hoga
+        speed:100,
+        
+        
+      });
+      </script>
 
 export default Contact_form
