@@ -30,13 +30,9 @@
   display:block;
   width:90%;
   padding: 2px;
-  
   margin-bottom: 10px;
   padding: 10px 10px;
   border-radius: 25px;
- 
-  
-  
 }
 
 .mybtn{
@@ -57,20 +53,8 @@
 }
 
 .container{
-  
   display: flex;
   flex-direction: row ;
- 
-}
-.item{
-  width:60px;
-  height:40px;
-  
-  border-radius: 70%;
-  margin: 20px;
-  padding:5px;
-  padding-bottom:10px;
-  padding-top: 20px;
 }
 
 #item-1{
@@ -106,7 +90,91 @@
   font-size: large;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h2{
+.h2-up{
    font-size: 1.99em;
   font-family:serif;
+}
+
+/* Below are the css of Contact form*/
+.bodyDesignContact
+    {
+        background-image:  url("https://www.archtis.com/wp-content/uploads/2020/07/Dynamic-Watermark-Thumbprint-1.png");
+        background-size: cover;   
+
+    }
+    .card-design
+    {
+        width: 50%;   
+    }
+    .h2-card{
+        color:rgb(179, 157, 32);
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 2em;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+.myinput-card{
+    display:block;
+    width:90%;
+    padding: 2px;
+    margin-bottom: 7px;
+    padding: 10px 10px;
+    background-color: white;
+    }
+   
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 1.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.raise {
+  --color: #ffa260;
+  --hover: rgb(179, 157, 32);
+}
+.button-card {
+  color: var(--color);
+  transition: 0.25s;
+}
+.button-card:hover, .button-card:focus {
+  border-color: var(--hover);
+  color:#92ad09;
+}
+
+.button-card {
+  background: none;
+  border: 3px solid;
+  font: inherit;
+  line-height: 1;
+ 
+  padding: 1em 2em;
+}
+
+.container-element{
+  width:35%;
+  height:20%;
+  
+}
+
+.item{ 
+align-content: center;
+text-align: center;
+padding: 20%;
+}
+
+.item-border{ 
+  border-right: 2px solid #e5ff60;
+  /* its a class for item-1 and item-2 border line */
+}
+.contact{
+  display: flex;
+  flex-direction: row ;
+  
+  justify-content: space-evenly;
+}
+.p1-contact{
+  color:rgb(246, 119, 140)
+}
+.p-contact{
+  color:rgb(162, 143, 30);
+  font-style: italic;
 }
