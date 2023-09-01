@@ -13,20 +13,20 @@ const Contact_form = () => {
     <div className= "container mx-auto contact site-title container-element">
       <div className="item item-1 align-items-center item-border">
         <p className="fs-5 p-contact"><b>PHONE</b> </p>
-        <i className="bi bi-telephone-fill  " style="color:rgb(179, 157, 32)"></i>
+        <i className="bi bi-telephone-fill  " style={{color:'rgb(179, 157, 32)'}}></i>
         
         <p className="p1-contact">+91123456789 <br/>+91876456789 </p>
         
       </div> 
       <div className="item item-2 item-border">
         <p className="fs-5 p-contact"><b>ADDRESS</b></p>
-        <i className="bi bi-geo-alt-fill  fs-5" style="color:rgb(179, 157, 32)"></i>
+        <i className="bi bi-geo-alt-fill  fs-5" style={{color:'rgb(179, 157, 32)'}}></i>
         
         <p className="p1-contact">123-B,Tej Complex,Hazratganj</p>
       </div> 
       <div className="item item-3">
         <p className="fs-5 p-contact"><b>EMAIL</b></p>
-        <i className="bi bi-envelope-at-fill fs-5" style="color:rgb(179, 157, 32)"></i>
+        <i className="bi bi-envelope-at-fill fs-5" style={{color:'rgb(179, 157, 32)'}}></i>
         <p className="p1-contact">zehrarasheeq@gmail.com </p>
         
       </div>
@@ -54,7 +54,7 @@ const Contact_form = () => {
 
   )
 }
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+{/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal().reveal('.site-title',{
@@ -78,6 +78,6 @@ const Contact_form = () => {
         
         
       });
-      </script>
+      </script> */}
 
 export default Contact_form

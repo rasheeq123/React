@@ -178,3 +178,10 @@ padding: 20%;
   color:rgb(162, 143, 30);
   font-style: italic;
 }
+
+.nav-item .active{
+  border-bottom: 2px solid crimson;
+  color:crimson !important;
+  font-weight: bold;
+
+}
