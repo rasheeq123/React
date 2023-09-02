@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import Navbar from './components/Navbar';
 import Contact_form from './components/Contact_form';
 import EventHandling from './components/EventHandling';
+import StateManagement from './components/StateManagement';
 
 function App() {
   return (
@@ -24,10 +25,13 @@ function App() {
         <Route path="/" element={<Home/>}/> 
         <Route path="/login" element={<Login/>}/> 
         <Route path="/Signup" element={<Signup/>}/> 
-        <Route path="/event" element={<EventHandling/>}/> 
+        <Route path="/event" element={<EventHandling/>}/>
+        <Route path="/state" element={<StateManagement/>}/>  
 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
+        
+
         
         
         
