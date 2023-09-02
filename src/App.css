@@ -185,3 +185,17 @@ padding: 20%;
   font-weight: bold;
 
 }
+
+/* css of Linkedin_post */
+.card-post{
+  height:80%;
+  width:30%;
+}
+.img-header-post{
+  border-radius: 70%;
+  width:40px;
+  height:40px;
+ 
+  padding-bottom:10px;
+  
+}

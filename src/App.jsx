@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Contact_form from './components/Contact_form';
 import EventHandling from './components/EventHandling';
 import StateManagement from './components/StateManagement';
+import Linkedin_post from './components/Linkedin_post';
 
 function App() {
   return (
@@ -22,11 +23,14 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route path="/" element={<Home/>}/> 
+        <Route path="/home" element={<Home/>}/> 
         <Route path="/login" element={<Login/>}/> 
         <Route path="/Signup" element={<Signup/>}/> 
         <Route path="/event" element={<EventHandling/>}/>
         <Route path="/state" element={<StateManagement/>}/>  
+        <Route path="/post" element={<Linkedin_post/>}/>  
+        
+        
 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
