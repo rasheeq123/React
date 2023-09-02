@@ -189,13 +189,23 @@ padding: 20%;
 /* css of Linkedin_post */
 .card-post{
   height:80%;
-  width:30%;
+  width:32%;
 }
 .img-header-post{
   border-radius: 70%;
   width:50px;
   height:50px;
   margin-top: -10px;
+  margin-right: 5px;
+  margin-left: -7px;
+
+    
+}
+.img-header-post-footer{
+  border-radius: 70%;
+  width:50px;
+  height:50px;
+ 
   margin-right: 5px;
   margin-left: -7px;
     
@@ -212,5 +222,12 @@ padding: 20%;
 .img-gdsc{
  
   margin-top: 5em;
-  height: 5.5em;
+  height: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.button-post{
+  display: flex;
+  justify-content: space-between;
+  
 }
