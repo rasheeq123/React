@@ -66,6 +66,11 @@ const Navbar = () => {
                                     Todo List
                                 </NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="chatting">
+                                    Chat View
+                                </NavLink>
+                            </li>
                         </ul>
                         <form className="d-flex" role="search">
                             <input

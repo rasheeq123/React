@@ -11,6 +11,7 @@ import EventHandling from './components/EventHandling';
 import StateManagement from './components/StateManagement';
 import Linkedin_post from './components/Linkedin_post';
 import Todo from './components/Todo';
+import Chatting from './components/Chatting';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/state" element={<StateManagement/>}/>  
         <Route path="/post" element={<Linkedin_post/>}/>  
         <Route path="/todo" element={<Todo/>}/>  
+        <Route path="/chatting" element={<Chatting/>}/>  
         
         
 

@@ -23,13 +23,13 @@ const Todo = () => {
 
 
                 </div>
-                <div className="card-body"></div>
+                <div className="card-body">
                 {todoList.map( (todo)=>{return <div className='d-flex justify-content-between mb-4'>
                     <h5>{todo}</h5>
                     <button className="btn btn-danger">Delete</button>
                     </div>})}
 
-
+                </div>
             </div>
         </div>
     </div>
