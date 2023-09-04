@@ -8,6 +8,8 @@ const Chatting=()=>{
         console.log(e.target.value);
         setTodochat([...todochat, e.target.value]);
         console.log([...todochat, e.target.value]);
+
+        e.target.value="";
     }
 }
 
@@ -19,7 +21,7 @@ const Chatting=()=>{
             <div className="card-header">
                 {todochat.map((todo)=>{return <div className='d-flex justify-content-between mb-4'>
                     <p>{todo}</p>
-                    <p className="text-primary display-date"><i class="bi bi-check2-all"></i></p>
+                    <p className="text-primary "><i class="bi bi-check2-all"></i></p>
                     </div>})}
                 
             </div>
