@@ -13,6 +13,7 @@ import Linkedin_post from './components/Linkedin_post';
 import Todo from './components/Todo';
 import Chatting from './components/Chatting';
 import ProductList from './components/ProductList';
+import Chat_Sir from './components/Chat_Sir';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         <Route path="/todo" element={<Todo/>}/>  
         <Route path="/chatting" element={<Chatting/>}/>  
         <Route path="/list" element={<ProductList/>}/>  
+        <Route path="/chat" element={<Chat_Sir/>}/>  
+
+        
         
         
 
