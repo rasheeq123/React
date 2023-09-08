@@ -26,10 +26,7 @@ const Signup_Sir = () => {
             
             //send values to backend
         },
-        validationSchema: SignupSchema
-
-
-
+        validationSchema: SignupSchema 
     });
 
   return (
