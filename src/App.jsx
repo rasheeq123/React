@@ -14,6 +14,7 @@ import Todo from './components/Todo';
 import Chatting from './components/Chatting';
 import ProductList from './components/ProductList';
 import Chat_Sir from './components/Chat_Sir';
+import Signup_Sir from './components/Signup_Sir';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/chatting" element={<Chatting/>}/>  
         <Route path="/list" element={<ProductList/>}/>  
         <Route path="/chat" element={<Chat_Sir/>}/>  
+        <Route path="/up" element={<Signup_Sir/>}/>  
 
         
         
