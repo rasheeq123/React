@@ -6,14 +6,17 @@ const Chat_Sir = () => {
     const [messageList, setmessageList] = useState([
         {text:'hello', sent:false},
         {text:'padha do', sent:true},
-        {text:'nikaalo', sent:false},
-        {text:'aacha bhai ok', sent:true}
+        {text:'nikal lo', sent:false},
+        {text:'aacha bhai ok', sent:true},
+        {text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit impedit necessitatibus commodi, ea delectus iste, soluta nulla aperiam libero quas amet at tempore pariatur adipisci culpa veritatis earum eligendi! Distinctio natus harum, incidunt qui hic sapiente doloribus nulla voluptas fugiat animi vero fugit possimus totam explicabo cumque laboriosam, ullam reiciendis?', sent:true},
+        {text:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit impedit necessitatibus commodi, ea delectus iste, soluta nulla aperiam libero quas amet at tempore pariatur adipisci culpa veritatis earum eligendi! Distinctio natus harum, incidunt qui hic sapiente doloribus nulla voluptas fugiat animi vero fugit possimus totam explicabo cumque laboriosam, ullam reiciendis?', sent:false}
     ]);
+    
 
     const sendMessage=()=>{
         const messageText= inputRef.current.value;
         console.log(messageText);
-        setmessageList([...messageList, {text: messageList,sent:true}])
+        setmessageList([...messageList, {text: messageText,sent:true}])
 
 
 
