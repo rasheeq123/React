@@ -1,5 +1,6 @@
 import { useFormik } from 'formik';
 import React from 'react'
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const loginform= useFormik ({
@@ -8,9 +9,41 @@ const Login = () => {
         email:'',
         password:''
     },
-    onSubmit: (values)=> {
+    onSubmit: async (values)=> {
         console.log(values);
-        //send values to backend
+
+        const res = await fetch('http://localhost:5000/user/authenticate',{
+            method: 'POST',
+            body:JSON.stringify(values),
+            headers:{
+                'Content-Type':'application/json'
+            }
+        });
+        console.log(res.status);
+            if(res.status===200){
+                Swal.fire({
+                    icon:'success',
+                    title:'Login Successfully'
+                    
+                })
+            }
+        
+            else if(res.status===400){
+                Swal.fire({
+                    icon:'error',
+                    title:'Login failed',
+                    text:'Email or password is invalid'
+                    
+                })
+            }
+            else{ // yaha pe ye condution jab address me kuch glti kr denge tb chlegi, basocally jab error occur hoga 
+                Swal.fire({
+                    icon:'error', // error defaullt h yaha
+                    title:'Error',
+                    text:'Something went wrong!!'
+                })
+            
+            }
     }
 });
 
@@ -20,7 +53,7 @@ const Login = () => {
             <div className="col-md-4 mx-auto">
                 <div className="card">
                     <div className="card-body">
-                        <h2 className="my-3">SignUp form</h2>
+                        <h2 className="my-3">Login form</h2>
 
                         <form onSubmit={loginform.handleSubmit} >
 

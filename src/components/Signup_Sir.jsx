@@ -1,5 +1,7 @@
 import { useFormik } from 'formik'
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
 const SignupSchema = Yup.object().shape({
@@ -17,6 +19,7 @@ const SignupSchema = Yup.object().shape({
 
 
 const Signup_Sir = () => {
+    const Navigate= useNavigate();
 
     const signupform= useFormik({
         initialValues: {
@@ -25,14 +28,41 @@ const Signup_Sir = () => {
             password:'',
             confirm:''
         },
-        onSubmit: (values,{resetForm} )=> {
+
+    onSubmit: async (values,{resetForm} )=> { 
             console.log(values);
             resetForm();
-            
+
+           const res= await fetch('http://localhost:5000/user/add', { // await use krne ke pehle async use krn pdega hme and async kahi bhi use kr skte h, fetch response dega  
+                method: 'POST',
+                body: JSON.stringify(values),
+                headers:{
+                    'content-Type': 'application/json'    // hum bta rhe h ki hmara data json ke form  me h
+
+                }
+
+            })
+            console.log(res.status);
+            if(res.status===200){
+                Swal.fire({
+                    icon:'success',
+                    title:'Registered Successfully',
+                    text:'Login to continue'
+                })
+                Navigate('/login');
+            }
+            else{ // yaha pe ye condution jab address me kuch glti kr denge tb chlegi, basocally jab error occur hoga 
+                Swal.fire({
+                    icon:'error', // error defaullt h yaha
+                    title:'Error',
+                    text:'Something went wrong!!'
+                })
+            }
             //send values to backend
         },
         validationSchema: SignupSchema 
     });
+
 
   return (
     <div>
