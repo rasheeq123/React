@@ -1,7 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+
+const Navbar = ({mycart, loggedIn}) => {
+    console.log(mycart);
+
+    const showLoginOption=()=>{
+        if(loggedIn){
+            return (
+             <li className="nav-item">
+               <button className='btn btn-danger'>Logout</button>
+
+            </li>
+            );
+        }
+    }
     return (
         <>
 
@@ -81,18 +94,12 @@ const Navbar = () => {
                                     SignUp_Sir
                                 </NavLink>
                             </li>
+                            <li className="nav-item">
+                                <h4>Cart Items:{mycart}</h4>
+                            </li>
+                            {showLoginOption()}
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input
-                                className="form-control me-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                            <button className="btn btn-outline-success" type="submit">
-                                Search
-                            </button>
-                        </form>
+                        
                     </div>
                 </div>
             </nav>

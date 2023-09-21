@@ -15,8 +15,12 @@ import Chatting from './components/Chatting';
 import ProductList from './components/ProductList';
 import Chat_Sir from './components/Chat_Sir';
 import Signup_Sir from './components/Signup_Sir';
+import { useState } from 'react';
 
 function App() {
+  let cartItems=30;
+  const [loggedIn, setloggedIn] = useState(false);
+
   return (
     <div>
       
@@ -25,11 +29,11 @@ function App() {
       <Link to="/Signup"> Signup</Link>
       <Link to="/Contact_form"> Contact form</Link> */}
 
-      <Navbar/>
+      <Navbar mycart={cartItems} loggedIn={loggedIn}/>
 
       <Routes>
         <Route path="/home" element={<Home/>}/> 
-        <Route path="/login" element={<Login/>}/> 
+        <Route path="/login" element={<Login setloggedIn={setloggedIn} />}/> 
         <Route path="/Signup" element={<Signup/>}/> 
         <Route path="/event" element={<EventHandling/>}/>
         <Route path="/state" element={<StateManagement/>}/>  
@@ -38,12 +42,7 @@ function App() {
         <Route path="/chatting" element={<Chatting/>}/>  
         <Route path="/list" element={<ProductList/>}/>  
         <Route path="/chat" element={<Chat_Sir/>}/>  
-        <Route path="/up" element={<Signup_Sir/>}/>  
-
-        
-        
-        
-
+        <Route path="/up" element={<Signup_Sir/>}/> 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
         

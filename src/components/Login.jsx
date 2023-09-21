@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import React from 'react'
 import Swal from 'sweetalert2';
 
-const Login = () => {
+const Login = ({setloggedIn}) => {
   const loginform= useFormik ({
     initialValues: {
         
@@ -26,6 +26,7 @@ const Login = () => {
                     title:'Login Successfully'
                     
                 })
+                setloggedIn(true);
             }
         
             else if(res.status===400){
