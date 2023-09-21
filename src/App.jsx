@@ -29,7 +29,7 @@ function App() {
       <Link to="/Signup"> Signup</Link>
       <Link to="/Contact_form"> Contact form</Link> */}
 
-      <Navbar mycart={cartItems} loggedIn={loggedIn}/>
+      <Navbar mycart={cartItems} loggedIn={loggedIn} setloggedIn={setloggedIn}/>
 
       <Routes>
         <Route path="/home" element={<Home/>}/> 
