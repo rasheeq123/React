@@ -17,6 +17,7 @@ import Chat_Sir from './components/Chat_Sir';
 import Signup_Sir from './components/Signup_Sir';
 import { useState } from 'react';
 import { AppProvider } from './AppContext';
+import UserAuth from './UserAuth';
 
 
 function App() {
@@ -41,8 +42,8 @@ function App() {
         <Route path="/event" element={<EventHandling/>}/>
         <Route path="/state" element={<StateManagement/>}/>  
         <Route path="/post" element={<Linkedin_post/>}/>  
-        <Route path="/todo" element={<Todo/>}/>  
-        <Route path="/chatting" element={<Chatting/>}/>  
+        <Route path="/todo" element={<UserAuth><Todo/></UserAuth>}/>  
+        <Route path="/chatting" element={<UserAuth><Chatting/></UserAuth>}/>  
         <Route path="/list" element={<ProductList/>}/>  
         <Route path="/chat" element={<Chat_Sir/>}/>  
         <Route path="/up" element={<Signup_Sir/>}/> 
