@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import useAppContext from '../AppContext';
 
 
-const Navbar = ({mycart, loggedIn, setloggedIn}) => {
-    console.log(mycart);
-
+const Navbar = ({mycart}) => {
+    const{loggedIn, setloggedIn}= useAppContext();
+   
     const showLoginOption=()=>{
         if(loggedIn){
             return (

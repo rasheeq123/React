@@ -16,6 +16,8 @@ import ProductList from './components/ProductList';
 import Chat_Sir from './components/Chat_Sir';
 import Signup_Sir from './components/Signup_Sir';
 import { useState } from 'react';
+import { AppProvider } from './AppContext';
+
 
 function App() {
   let cartItems=30;
@@ -25,15 +27,16 @@ function App() {
     <div>
       
       <BrowserRouter>
+      <AppProvider>
       {/* <Link to="/login"> Login</Link>
       <Link to="/Signup"> Signup</Link>
       <Link to="/Contact_form"> Contact form</Link> */}
 
-      <Navbar mycart={cartItems} loggedIn={loggedIn} setloggedIn={setloggedIn}/>
+      <Navbar mycart={cartItems} />
 
       <Routes>
         <Route path="/home" element={<Home/>}/> 
-        <Route path="/login" element={<Login setloggedIn={setloggedIn} />}/> 
+        <Route path="/login" element={<Login/>}/> 
         <Route path="/Signup" element={<Signup/>}/> 
         <Route path="/event" element={<EventHandling/>}/>
         <Route path="/state" element={<StateManagement/>}/>  
@@ -51,6 +54,7 @@ function App() {
         
         
       </Routes>
+      </AppProvider>
 
       </BrowserRouter>
     </div>
