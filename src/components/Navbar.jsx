@@ -4,13 +4,13 @@ import useAppContext from '../AppContext';
 
 
 const Navbar = ({mycart}) => {
-    const{loggedIn, setloggedIn}= useAppContext();
+    const{loggedIn, setloggedIn, logout}= useAppContext();
    
     const showLoginOption=()=>{
         if(loggedIn){
             return (
              <li className="nav-item">
-               <button className='btn btn-danger' onClick={()=>{ setloggedIn(false) }} >  Logout</button>
+               <button className='btn btn-danger' onClick={logout} >  Logout</button>
 
             </li>
             );
