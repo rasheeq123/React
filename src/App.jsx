@@ -18,6 +18,7 @@ import Signup_Sir from './components/Signup_Sir';
 import { useState } from 'react';
 import { AppProvider } from './AppContext';
 import UserAuth from './UserAuth';
+import UserManager from './components/UserManager';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/list" element={<ProductList/>}/>  
         <Route path="/chat" element={<Chat_Sir/>}/>  
         <Route path="/up" element={<Signup_Sir/>}/> 
+        <Route path="/usermanager" element={<UserManager/>}/> 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
         

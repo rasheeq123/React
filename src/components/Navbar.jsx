@@ -96,6 +96,11 @@ const Navbar = ({mycart}) => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink className="nav-link" to="usermanager">
+                                User Manager
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <h4>Cart Items:{mycart}</h4>
                             </li>
                             {showLoginOption()}
