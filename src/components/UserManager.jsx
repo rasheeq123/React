@@ -18,7 +18,13 @@ const UserManager = () => {
     getUserData();
   }, [])
   
+const deleteUser=(id)=>{
+    console.log(id);
+    //fetch
+    const res= fetch('http://localhost:5000/user/id', { 
 
+ })
+}
 
 
   return (
@@ -49,7 +55,9 @@ const UserManager = () => {
                                     <button className="btn btn-primary">Edit</button>
                                 </td>
                                 <td>
-                                    <button className="btn btn-danger">Delete</button>
+                                    <button 
+                                    onClick={()=>{deleteUser(user._id)}}
+                                    className="btn btn-danger">Delete</button>
                                 </td>
                             </tr>
 
