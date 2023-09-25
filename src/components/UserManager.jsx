@@ -16,6 +16,7 @@ const UserManager = () => {
     // when component opens
   
     getUserData();
+    
   }, [])
   
 const deleteUser=(id)=>{
