@@ -92,7 +92,7 @@ const Navbar = ({mycart}) => {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="up">
-                                    SignUp_Sir
+                                    SignUp
                                 </NavLink>
                             </li>
                             <li className="nav-item">

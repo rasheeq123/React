@@ -22,6 +22,7 @@ const deleteUser=(id)=>{
     console.log(id);
     //fetch
     const res= fetch('http://localhost:5000/user/id', { 
+        
 
  })
 }
