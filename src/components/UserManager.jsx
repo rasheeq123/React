@@ -23,6 +23,11 @@ const deleteUser=(id)=>{
     console.log(id);
     //fetch
     const res= fetch('http://localhost:5000/user/id', { 
+        method: 'POST',
+      body:JSON.stringify(values),
+        headers:{
+                'Content-Type':'application/json'
+            }
  })
 }
 
