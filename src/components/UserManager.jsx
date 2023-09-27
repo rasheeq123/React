@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import toast from 'react-hot-toast'
 
 const UserManager = () => {
 
@@ -19,17 +20,21 @@ const UserManager = () => {
     
   }, [])
   
-const deleteUser=(id)=>{
+const deleteUser=async (id)=>{
     console.log(id);
     //fetch
-    const res= fetch('http://localhost:5000/user/id', { 
-        method: 'POST',
-      body:JSON.stringify(values),
-        headers:{
-                'Content-Type':'application/json'
-            }
- })
-}
+    const res=await fetch('http://localhost:5000/user/delete/'+ id, { 
+        method: 'DELETE',
+        
+ });
+ console.log(res.status);
+ if(res.status===200){
+    getUserData();
+    toast.success('User Deleted Successfully');
+
+
+ }
+};
 
 
   return (

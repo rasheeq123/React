@@ -19,6 +19,7 @@ import { useState } from 'react';
 import { AppProvider } from './AppContext';
 import UserAuth from './UserAuth';
 import UserManager from './components/UserManager';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div>
+      <Toaster position='top-right'/>
       
       <BrowserRouter>
       <AppProvider>
