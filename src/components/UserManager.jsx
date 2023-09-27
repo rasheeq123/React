@@ -9,7 +9,7 @@ const UserManager = () => {
   const getUserData= async ()=>{
     const res=await fetch('http://localhost:5000/user/getall')
     console.log(res.status);
-    const data= await res.json();
+    const data= await res.json(); // data fetch krne ke lie
     console.table(data);
     setuserList(data);
   }

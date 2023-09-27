@@ -33,9 +33,11 @@ const UpdateUser = () => {
                     <div className="card-body">
                         <h2 className="my-3">User update form</h2>
 
-                        <Formik>
+                        <Formik
                             initialValues={userData}
                             onSubmit={}
+                            >
+                                {(signupform)=> ()}
                         </Formik>
 
 
