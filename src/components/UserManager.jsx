@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import { Link } from 'react-router-dom'
 
 const UserManager = () => {
 
@@ -62,7 +63,7 @@ const deleteUser=async (id)=>{
                                 <td>{user.email}</td>
                                 <td>{user.password}</td>
                                 <td>
-                                    <button className="btn btn-primary">Edit</button>
+                                    <Link to={"/updateuser/"+ user._id} className="btn btn-primary">Edit</Link>
                                 </td>
                                 <td>
                                     <button 
