@@ -18,6 +18,7 @@ const UpdateUser = () => {
 
     useEffect(() => { //useEffect by default 2 baar chlta h 
         fetchUserData()
+        
 
     }, []);
 
