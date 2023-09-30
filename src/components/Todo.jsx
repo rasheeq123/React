@@ -11,7 +11,7 @@ const Todo = () => {
         if(e.code==='Enter'){
              console.log(e.target.value); //jab enter krenge to input me jo hoga wo print hoga console me
              setTodoList([...todoList, e.target.value]); // ... means array me aaega aache se
-             console.log([...todoList, e.target.value]);
+             console.log([...todoList, e.target.value]);// spraed operator
 
              e.target.value="";
         }
