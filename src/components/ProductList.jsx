@@ -1,9 +1,27 @@
 import React, { useState } from 'react'
 import productData from './dummyData'
+import useCartContext from './CartContest';
 
 const ProductList = () => {
 
-    const [productsArray, setproductsArray] = useState(productData);
+    const [productsArray, setProductsArray] = useState(productData);
+    const {addItemToCart}= useCartContext();
+
+    const brands = ["Asus", "Dell", "Apple", "Lenevo", "HP"];
+    const searchProduct = (e) => {
+    const search = e.target.value;
+    let filteredData = productData.filter((product) => {
+      return product.model.toLowerCase().includes(search.toLowerCase());
+    });
+    setProductsArray(filteredData);
+  };
+  const filterBrand = (e) => {
+    const search = e.target.value;
+    let filteredData = productData.filter((product) => {
+      return product.brand === search;
+    });
+    setProductsArray(filteredData);
+  };
   return (
     <div>
         <div className="container">
@@ -19,7 +37,7 @@ const ProductList = () => {
                     <h3>{product.model}</h3>
                     <h2>₹{product.price}</h2> {/* windows+. */}
 
-                    <button className='btn  btn-primary'> <i class="bi bi-cart-dash-fill"></i> Add to Cart</button>
+                    <button onClick={() => addItemToCart(product)} className='btn  btn-primary'> <i class="bi bi-cart-dash-fill"></i> Add to Cart</button>
                     </div>
                     
                 </div>
