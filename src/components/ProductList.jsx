@@ -19,6 +19,7 @@ const ProductList = () => {
                     <h3>{product.model}</h3>
                     <h2>₹{product.price}</h2> {/* windows+. */}
 
+                    <button className='btn  btn-primary'> <i class="bi bi-cart-dash-fill"></i> Add to Cart</button>
                     </div>
                     
                 </div>
