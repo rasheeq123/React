@@ -8,6 +8,7 @@ const CartPage = () => {
   return (
     <div>
         <div className="container">
+          
             
         </div>
     </div>
