@@ -1,5 +1,17 @@
 import React from 'react'
-import { Layer, Rect, Stage } from 'react-konva'
+import { Circle, Image, Layer, Line, Rect, Stage, Text } from 'react-konva'
+import useImage from 'use-image'
+
+const LoadImage=({source})=>{
+    const [image]= useImage('/logo192.png');
+    return <Image draggable image={image}/>
+}
+
+const MemeImage=({source})=>{
+    const [image]= useImage('/meme.jpg');
+    return <Image draggable image={image}/>
+
+}
 
 const MemeCreator = () => {
   return (
@@ -26,6 +38,29 @@ const MemeCreator = () => {
                     fill="green"
                     stroke={'yellow'}
                     strokeWidth={4}
+                    />
+                    <Circle
+                    x={200}
+                    y={100}
+                    radius={50}
+                    fill='black'
+                    stroke={'red'}
+                    />
+                    <Line x={200}
+                    y={200} points={[0,0,100,100, 100, 0,0,1000]} stroke={'blue'} closed />
+
+                    <LoadImage/>
+                </Layer>
+
+            </Stage>
+            <Stage width={800} height={600}>
+                <Layer>
+                    <MemeImage/>
+                    <Text
+                    text='React'
+                    fontSize={50}
+                    x={300}
+                    y={300}
                     />
                 </Layer>
 
