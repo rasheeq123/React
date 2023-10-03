@@ -23,6 +23,7 @@ import { Toaster } from 'react-hot-toast';
 import UpdateUser from './components/UpdateUser';
 import { CartProvider } from './components/CartContest';
 import CartPage from './components/CartPage';
+import UsingCharts from './components/UsingCharts';
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
         <Route path="/usermanager" element={<UserManager/>}/> 
         <Route path="/updateuser/:id" element={<UpdateUser/>}/> 
         <Route path="/cart" element={<CartPage/>}/> 
+        <Route path="/usingcharts" element={<UsingCharts/>}/> 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
         

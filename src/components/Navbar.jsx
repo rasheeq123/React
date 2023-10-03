@@ -108,6 +108,11 @@ const Navbar = ({mycart}) => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
+                                <NavLink className="nav-link" to="usingcharts">
+                                Using Charts
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
                                 <h4>Cart Items:{cartItems.length}</h4>
                             </li>
                             {showLoginOption()}
