@@ -47,7 +47,7 @@ const Login = () => {
                     
                 })
             }
-            else{ // yaha pe ye condution jab address me kuch glti kr denge tb chlegi, basocally jab error occur hoga 
+            else{ // yaha pe ye condution jab address me kuch glti kr denge tb chlegi, basically jab error occur hoga 
                 Swal.fire({
                     icon:'error', // error defaullt h yaha
                     title:'Error',
