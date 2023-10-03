@@ -24,6 +24,7 @@ import UpdateUser from './components/UpdateUser';
 import { CartProvider } from './components/CartContest';
 import CartPage from './components/CartPage';
 import UsingCharts from './components/UsingCharts';
+import MemeCreator from './components/MemeCreator';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
         <Route path="/updateuser/:id" element={<UpdateUser/>}/> 
         <Route path="/cart" element={<CartPage/>}/> 
         <Route path="/usingcharts" element={<UsingCharts/>}/> 
+        <Route path="/meme" element={<MemeCreator/>}/> 
         <Route path="*" element={<NotFound/>}/> 
         <Route path="Contact_form" element={<Contact_form/>}/> 
         
