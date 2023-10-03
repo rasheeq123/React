@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stage } from 'react-konva'
+import { Layer, Rect, Stage } from 'react-konva'
 
 const MemeCreator = () => {
   return (
@@ -9,8 +9,26 @@ const MemeCreator = () => {
                 Meme Creator
             </h1>
             <hr />
-            <Stage>
-                
+            <Stage width={600} height={400} >
+                <Layer>
+                    <Rect
+                    x={0}
+                    y={0}
+                    width={100}
+                    height={100}
+                    fill="red"
+                    />
+                    <Rect
+                    x={100}
+                    y={50}
+                    width={100}
+                    height={100}
+                    fill="green"
+                    stroke={'yellow'}
+                    strokeWidth={4}
+                    />
+                </Layer>
+
             </Stage>
 
         </div>
