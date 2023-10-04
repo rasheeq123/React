@@ -77,8 +77,4 @@ const UpdateUser = () => {
         </div>
     )
 }
-
-
-
-
 export default UpdateUser
