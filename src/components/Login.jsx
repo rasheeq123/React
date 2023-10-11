@@ -22,6 +22,8 @@ const Login = () => {
             body:JSON.stringify(values),
             headers:{
                 'Content-Type':'application/json'
+
+                
             }
         });
         console.log(res.status);
