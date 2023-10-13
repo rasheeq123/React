@@ -22,7 +22,6 @@ const Login = () => {
             body:JSON.stringify(values),
             headers:{
                 'Content-Type':'application/json'
-
                 
             }
         });
