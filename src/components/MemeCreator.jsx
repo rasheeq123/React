@@ -9,6 +9,7 @@ const LoadImage=({source})=>{
 
 const MemeImage=({source})=>{
     const [image]= useImage('/meme.jpg'); 
+    
     return <Image draggable image={image}/>
 
 }
