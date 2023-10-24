@@ -8,9 +8,6 @@ const Linkedin_post = () => {
 const [likes, setlikes] = useState(0)
 
 
-
-
-
   return (
     <>
   <div className=" text-align-center d-flex justify-content-center align-items-center vh-100 bg-body-secondary">
@@ -51,7 +48,7 @@ const [likes, setlikes] = useState(0)
         <input type="text" class="form-control form-control-lg my-input" placeholder='Add a comment'/>
         {/* <i class="bi bi-emoji-smile-fill"></i> <i class="bi bi-image"></i> */}
 
-        
+
         
 
      </div>
