@@ -50,6 +50,8 @@ const [likes, setlikes] = useState(0)
         <img className='img-header-post-footer' src="https://i.pinimg.com/736x/3c/a9/95/3ca995e6cff4cf02fea047d9035173c3.jpg" alt="" />
         <input type="text" class="form-control form-control-lg my-input" placeholder='Add a comment'/>
         {/* <i class="bi bi-emoji-smile-fill"></i> <i class="bi bi-image"></i> */}
+
+        
         
 
      </div>
