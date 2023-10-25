@@ -6,8 +6,6 @@ const Linkedin_post = () => {
 
 //    const [likes, setlikes] = useState(0)
 const [likes, setlikes] = useState(0)
-
-
   return (
     <>
   <div className=" text-align-center d-flex justify-content-center align-items-center vh-100 bg-body-secondary">
