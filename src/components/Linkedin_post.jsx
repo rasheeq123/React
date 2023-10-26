@@ -18,6 +18,7 @@ const [likes, setlikes] = useState(0)
         <h6 className='text-muted mx-2'> (She/Her)<i className="bi bi-dot"></i>You</h6>
         <p><i className=" bi bi-three-dots text-end text-muted "></i></p>
         </div>
+        
         <p className='text-muted mx-5 p-designation-post'><i class="bi bi-arrow-right-square-fill text-info "></i> Imminent MERN Stack Developer || GDSC'22 <i class="bi bi-arrow-left-square-fill text-info"></i></p>
 
         <p className='text-muted mx-5 p-designation-post-II-line'> 1D<i class="bi bi-dot"></i> Edited<i class="bi bi-dot"></i><i class="bi bi-globe-central-south-asia"></i></p>
